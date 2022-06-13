@@ -1,0 +1,4 @@
+in app.js (parent component) return(
+	
+	<childComponent objectFromChild={objectFromParent}/>
+)

@@ -106,18 +106,18 @@ const HookForm = (props) => {
             <input type="submit" onClick={createUser} value="Create User" />
         </form>
         <div>
-        <label>First Name: {firstName}</label>
+            <label>First Name: {firstName}</label>
         </div>
         <div>
-        <label>Last Name: {lastName}</label>
+            <label>Last Name: {lastName}</label>
         </div>
         <div>
-        <label>Email: {email}</label>
+            <label>Email: {email}</label>
         </div>
         <div>
-        <label>Password: {password}</label>
+            <label>Password: {password}</label>
         </div>
-        <label>Confirm Password: {confirmPassword}</label>
+            <label>Confirm Password: {confirmPassword}</label>
         </>
     )
 }

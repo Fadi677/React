@@ -10,6 +10,7 @@ function App(props) {
     const allTasks=[...tasksList];
     allTasks.push(task);
     setTasksList(allTasks);
+    console.log(tasksList);
   }
   const deleteTask=(task)=>{
     const allTasks=[...tasksList];
@@ -23,7 +24,7 @@ function App(props) {
       {/* //blue addNewTask sends the function "yellow addNewTask" from app.js to the child component */}
       <TaskGenerator addNewTask={addNewTask}/>
       {/* "task" bellow sends the task itself to the child component */}
-      {tasksList.map((t)=>{return <ShowTasks key={Math.random()} task={t} deleteTask={deleteTask}/>})}
+      {tasksList.map((t, ind)=>{return <ShowTasks key={ind} task={t} deleteTask={deleteTask}/>})}
     </div>
   );
 }
