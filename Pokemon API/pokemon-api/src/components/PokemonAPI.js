@@ -8,7 +8,6 @@ const PokemonAPI = () => {
         .then(response=>setPokemons(response.results))
         console.log("pokemon api is fetched");
     };
-        
     
     return (
         <>
